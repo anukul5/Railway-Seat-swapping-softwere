@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>output</title>
+   <style>
+    .card {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      
+    }
+    #click {
+      margin: 0 auto;
+      padding: 6px 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    #response-container,#div,#dropdown
+    {
+      margin-bottom: 5px;
+    }
+   </style>
+   
+  </head>
+
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+ 
+<div class="card">
+  <h1>Seat Selector</h1>
+
+    <div id="response-container"></div>
+    <div id="div"></div>
+    <label for="dropdown">Choose seat type :</label>
+
+    <select id="dropdown" required>
+      <option value="" disabled selected>Select any option</option>
+      <option value="lower">Lower</option>
+      <option value="middle">Middle</option>
+      <option value="upper">Upper</option>
+      <option value="side_upper">Side Upper</option>
+      <option value="side_lower">Side Lower</option>
+    </select>
+
+    <button id="click" onclick="getStatus()">GO</button>
+    <div id="result"></div>
+
+    <p id="status-container"></p>
+    <p id="myCon"></p>
+
+    <div id = "try"></div>
+  </div>
+  </body>
+</html>

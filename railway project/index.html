@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railway Passenger App - Landing Page</title>
+    <style>
+        /* Internal CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: start;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fade-in 1s ease;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: block;
+            padding: 12px 24px;
+            background-color: #4caf50;
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            align-self: center;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Animation keyframes */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .card {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</head>
+<body style="background-color: #f2f2f2;">
+    <div class="card">
+        
+            <h1>Welcome to the Railway Passenger App</h1>
+            <ul>
+                <li>Experience a seamless journey with our innovative web application designed specifically for railway passengers.</li><br>
+                <li>Communicate and pre-select your desired seat types before your train's arrival. Say goodbye to the hassle of getting the desired seats!</li><br>
+                <li>Customize your journey with user-friendly interface options, whether you prefer window seats, aisle seats, or have specific class preferences.</li><br>
+                <li>Interact with other passengers online and swap seats hassle-free.</li><br>
+            </ul>
+            <a href="input.html" class="cta-button">Get Started</a>
+        </div>
+  
+   
+</body>
+</html>
